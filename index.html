@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Random Card Generator</title>
+</head>
+<body>
+    <button onclick="window.onload()">New card</button>
+    <div id="countdown">10 seconds remaining</div>
+    <form class="changer-form">
+        <label for="width"> Card width: </label>
+        <input id="width" type="range" class="input-width" min="1" max="500" value="50" placeholder="Card width"/>
+          </br>
+        <label for="height"> Card height: </label>  
+        <input id="height" type="range" class="input-height" min="1" max="750" value="50" placeholder="Card height"/>
+        
+    </form>
+    <div id="card">
+
+    </div>
+  
+  <script src="scripts/main.js"></script>
+</body>
+</html>
