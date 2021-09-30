@@ -1,13 +1,15 @@
 window.onload = function() {
     
+    
     let suit = Math.floor(Math.random() * 4 + 1)
-    let cardNumber = Math.floor(Math.random() * 12 + 1)
+    let CardNumberArray = ['A', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'K']
     let cardDiv = document.getElementById("card")
     let widthInput = document.getElementById("width")
     let heightInput = document.getElementById("height")
 
-    
-    cardDiv.innerHTML = `<h1>${cardNumber}</h1>`
+    let cardNumber = CardNumberArray[Math.floor(Math.random() * 13)]
+    console.log(cardNumber)
+
     widthInput.addEventListener('change', (event) => {
         cardDiv.style.width = `${event.target.value}px`
     })
